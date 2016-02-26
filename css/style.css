@@ -219,87 +219,58 @@ section p {
     section p {
       background-color: #0074D9; } }
 
-html, body {
-  margin: 0;
-  padding: 0; }
+header {
+  background-color: #7FDBFF;
+  margin: 0px;
+  padding: 0px; }
 
-.section {
-  width: 100%; }
-
-.container {
-  position: relative;
-  margin: 0 auto;
-  font-size: 14px;
-  font-weight: 300;
-  font-family: "Roboto", "Open Sans", Arial, sans-serif;
-  overflow: hidden; }
-
-.container {
-  max-width: 860px;
+#header-wrapper {
+  max-width: 840px;
   background: transparent;
-  padding: 5px 0px; }
+  margin: 0 auto;
+  border: solid 1px black; }
 
-.hold {
-  height: 80px; }
-
-.header {
-  line-height: 80px;
-  width: 100%;
-  background: lightgray;
+.s-header {
+  line-height: 34px;
+  width: auto;
+  padding: 0 20px;
+  background: transparent;
   transition: line-height 0.15s linear, box-shadow 0.15s linear;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 100; }
-  .header.small {
+  .s-header.small {
     line-height: 40px;
     box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8); }
-    .header.small > .container > #logo {
-      height: 38px; }
+  .s-header ul.nav {
+    background: transparent; }
+  .s-header ul.nav li {
+    display: inline-block;
+    padding: 10px 20px; }
 
 #logo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-    background-image: url("../img/logo.svg");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  float: left;
-  height: 40px;
-  width: 200px;
-  margin-left: 10px; }
-
-ul.nav {
-  float: right;
-  list-style: none;
-  margin: 0px 10px 0px 0px;
-  padding: 0;
-  background: transparent; }
-  ul.nav li {
-    float: left;
-    position: relative; }
-    ul.nav li a {
-      transition: color 0.2s linear;
-      font-size: 18px;
-      padding: 15px;
-      margin: 0px 5px;
-      color: black;
-      background: transparent;
-      text-decoration: none; }
-      ul.nav li a:hover {
-        color: white;
-        background: transparent;
-        transition: call ease-ease 0.2s linear; }
+  background-color: red;
+  background-image: url("../img/logo.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 250px;
+  display: inline-block;
+  margin: 0px 10px 0px; }
 
 #cptoggle {
   width: 28px;
   height: 30px;
-  margin: 50px auto;
-  background: transparent; }
+  margin: 10px 0px 0px;
+  z-index: 101;
+  display: inline-block;
+  background: yellow; }
   #cptoggle:hover {
     cursor: pointer; }
+
+#cpmenu {
+  background: transparent;
+  padding: 50px 10px; }
 
 #cptoggle div {
   width: 100%;
