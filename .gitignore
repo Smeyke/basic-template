@@ -36,7 +36,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-.sass-cache
-.sass-cache/*
-
-*.sassc
+sass/.sass-cache
+sass/.sass-cache/*
