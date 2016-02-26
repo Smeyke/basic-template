@@ -38,3 +38,7 @@ Temporary Items
 
 sass/.sass-cache
 sass/.sass-cache/*
+
+# Ignore docs files
+styles/.sass-cache
+styles/.sass-cache/*
