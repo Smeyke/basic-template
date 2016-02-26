@@ -215,6 +215,9 @@ section p {
   background-color: #7FDBFF;
   border-radius: 10px;
   box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.8); }
+  @media (max-width: 740px) {
+    section p {
+      background-color: #0074D9; } }
 
 html, body {
   margin: 0;
@@ -225,19 +228,16 @@ html, body {
 
 .container {
   position: relative;
-  width: 1170px;
   margin: 0 auto;
-  color: #444;
   font-size: 14px;
   font-weight: 300;
   font-family: "Roboto", "Open Sans", Arial, sans-serif;
   overflow: hidden; }
 
 .container {
-  padding: 10px 0 10px 0;
-  width: 100%;
   max-width: 860px;
-  background: transparent; }
+  background: transparent;
+  padding: 5px 0px; }
 
 .hold {
   height: 80px; }
