@@ -38,3 +38,5 @@ Temporary Items
 
 .sass-cache
 .sass-cache/*
+
+*.sassc
