@@ -75,3 +75,41 @@ ul.nav
         color: white
         background: transparent
         transition: call ease-ease 0.2s linear
+
+
+
+
+
+
+
+
+// toggle test
+
+#cptoggle
+  width: 28px
+  height: 30px
+  margin: 50px auto
+  background: transparent
+  &:hover
+    cursor: pointer
+
+
+#cptoggle div
+  width: 100%
+  height: 5px
+  background: black
+  margin: 4px auto
+  transition: all 0.3s
+  backface-visibility: hidden
+
+
+#cptoggle.on .one
+  transform: rotate(45deg) translate(5px, 5px)
+
+
+#cptoggle.on .two
+  opacity: 0
+
+
+#cptoggle.on .three
+  transform: rotate(-45deg) translate(7px, -8px)

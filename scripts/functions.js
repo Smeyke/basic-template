@@ -10,3 +10,9 @@ window.onscroll = function() {
       el.classList.remove(className);
   }
 };
+
+
+$("#cptoggle").click(function() {
+  $(this).toggleClass("on");
+  $("#cpmenu").slideToggle();
+});
