@@ -1,0 +1,80 @@
+//  NAVIGATION STYLES
+
+html, body
+  margin: 0
+  padding: 0
+
+.section
+  width: 100%
+
+.container
+  position: relative
+  width: 1170px
+  margin: 0 auto
+  color: #444
+  font-size: 14px
+  font-weight: 300
+  font-family: 'Roboto', 'Open Sans', Arial, sans-serif
+  overflow: hidden
+
+.container
+  padding: 10px 0 10px 0
+  width: 100%
+  max-width: 860px
+  background: transparent
+
+// HEADER
+
+.hold
+  height: 80px
+
+.header
+  line-height: 80px
+  width: 100%
+  background: lightgray
+  transition: line-height 0.15s linear, box-shadow 0.15s linear
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  &.small
+    line-height: 40px
+    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8)
+    > .container > #logo
+      height: 38px
+
+#logo
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  background: transparent
+    image: url("../img/logo.svg")
+    position: center center
+    size: contain
+    repeat: no-repeat
+  float: left
+  height: 40px
+  width: 200px
+  margin-left: 10px
+
+ul.nav
+  float: right
+  list-style: none
+  margin: 0px 10px 0px 0px
+  padding: 0
+  background: transparent
+  li
+    float: left
+    position: relative
+    a
+      transition: color 0.2s linear
+      font-size: 18px
+      padding: 15px
+      margin: 0px 5px
+      color: black
+      background: transparent
+      text-decoration: none
+      &:hover
+        color: white
+        background: transparent
+        transition: call ease-ease 0.2s linear

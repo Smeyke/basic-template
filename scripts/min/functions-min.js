@@ -1,0 +1,1 @@
+window.onscroll=function(){var s=document.getElementsByClassName("header")[0],l="small";s.classList&&(window.scrollY>10?s.classList.add(l):s.classList.remove(l))};
