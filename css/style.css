@@ -234,21 +234,26 @@ header {
   border-bottom: solid 1px gray; }
 
 .small {
-  height: 40px;
+  height: 50px;
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8); }
 
 .s-header {
   line-height: 34px;
-  width: 100%;
+  width: auto;
   padding: 0px;
-  background: red;
+  background: transparent;
   position: relative;
   z-index: 100; }
   .s-header ul.nav {
-    background: transparent; }
+    background: transparent;
+    margin: 0px 10px 0px 0px;
+    font-size: 0; }
+    @media (max-width: 860px) {
+      .s-header ul.nav {
+        margin: 0px; } }
   .s-header ul.nav li {
     display: inline-block;
-    padding: 0px 20px; }
+    padding: 0px; }
     @media (max-width: 860px) {
       .s-header ul.nav li {
         display: block;
@@ -256,16 +261,29 @@ header {
         padding: 0px; } }
   .s-header ul li a {
     color: black;
+    background: transparent;
     text-decoration: none;
+    margin: 0px;
     display: inline-block;
-    line-height: 58px; }
+    line-height: 35px;
+    padding: 0px 3px;
+    margin: 0px 15px;
+    font-weight: 300;
+    font-size: 18pt; }
+    .s-header ul li a:hover {
+      border-bottom: solid 4px black; }
     @media (max-width: 860px) {
       .s-header ul li a {
         height: 60px;
         width: 100%;
+        line-height: 58px;
         text-align: center;
         background: white;
-        border-bottom: solid 1px gray; }
+        padding: 0px;
+        margin: 0px;
+        font-size: 16pt;
+        font-weight: 400;
+        border-top: solid 1px gray; }
         .s-header ul li a:hover {
           color: white;
           background: black; } }
@@ -297,20 +315,21 @@ header {
       display: inline; } }
 
 #cpmenu {
-  background: yellow;
+  background: transparent;
   padding: 0px;
   display: block;
-  margin: 0px 10px 0px 0px;
+  margin: 0px;
   position: relative;
   z-index: 50;
   display: inline-block;
   float: right;
-  padding: 30px 0px; }
+  margin: 45px 0px 0px; }
   @media (max-width: 860px) {
     #cpmenu {
       display: none;
       float: none;
-      padding: 0px; } }
+      padding: 0px;
+      margin: 0px; } }
 
 #cptoggle div {
   width: 100%;
