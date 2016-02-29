@@ -1,28 +1,17 @@
 //  NAVIGATION STYLES
 
 header
+  background-color: $aqua
   margin: 0px
   padding: 0px
-
-.fluid-header
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  z-index: 115
-  background: violet
-  transition: all 0.2s linear, box-shadow 0.2s linear
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8)
 
 #header-wrapper
   max-width: 1200px
-  background: transparent
+  background: yellow
   margin: 0 auto
-  position: relative
-  height: 120px
+  height: 50px
 
-.small
-  height: 50px !important
 
 
 
@@ -31,7 +20,9 @@ header
   width: auto
   padding: 0px
   background: transparent
+  position: relative
   z-index: 100
+  margin-right: -10px
 
 
   //  ul nav font-size: 0 fixes space between inline-block elements
@@ -57,14 +48,12 @@ header
     text-decoration: none
     margin: 0px
     display: inline-block
-    line-height: 60px
+    line-height: 35px
     padding: 0px 3px
     margin: 0px 15px
     font:
       weight: 300
       size: 18pt
-    margin-top: 4px
-    border-bottom: solid 4px transparent
     &:hover
       border-bottom: solid 4px black
 
@@ -75,7 +64,6 @@ header
       text-align: center
       background: white
       padding: 0px
-      margin: 0px
       font:
         size: 16pt
         weight: 400
@@ -84,41 +72,24 @@ header
         color: white
         background: black
 
-
-#logo-box
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
-  left: 10px
-  margin: 0
-
-
-  // @media (max-width: 860px)
-    position: static
-    top: auto
-    transform: none
-    left: auto
-    margin-left: 10px
-
-
 #logo
   background:
     color: transparent
     image: url("../img/logo.svg")
-    position: center center
+    position: left center
     size: contain
     repeat: no-repeat
-  height: 80px
-  width: 200px
+  height: 40px
+  width: 250px
   display: inline-block
-  margin: 8px 0px 0px 0px
+  margin: 5px 10px
 // Margin Top to center the logo in header, adjust for all media querys
 
 
 #cptoggle
   width: 28px
   height: 30px
-  margin: 50px 10px 0px
+  margin: 10px 10px 0px
   z-index: 101
   display: inline-block
   background: transparent
@@ -137,22 +108,17 @@ header
   padding: 0px
   display: block
   margin: 0px
+  position: relative
   z-index: 50
   display: inline-block
-  margin: 0px 0px 0px
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
-  right: 10px
+  float: right
+  margin: 10px 0px 0px
   @media (max-width: 860px)
     display: none
-    position: relative
     float: none
     padding: 0px
     margin: 0px
-    top: auto
-    transform: none
-    right: auto
+
 
 // Hamburger Menu Styling
 #cptoggle div
