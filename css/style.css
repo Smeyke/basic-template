@@ -249,7 +249,7 @@ header {
   .s-header ul.nav li {
     display: inline-block;
     padding: 0px 20px; }
-    @media (max-width: 740px) {
+    @media (max-width: 860px) {
       .s-header ul.nav li {
         display: block;
         margin: 0px;
@@ -259,7 +259,7 @@ header {
     text-decoration: none;
     display: inline-block;
     line-height: 58px; }
-    @media (max-width: 740px) {
+    @media (max-width: 860px) {
       .s-header ul li a {
         height: 60px;
         width: 100%;
@@ -288,21 +288,29 @@ header {
   z-index: 101;
   display: inline-block;
   background: transparent;
-  float: right; }
+  float: right;
+  display: none; }
   #cptoggle:hover {
     cursor: pointer; }
+  @media (max-width: 860px) {
+    #cptoggle {
+      display: inline; } }
 
 #cpmenu {
   background: yellow;
   padding: 0px;
   display: block;
-  margin: 0px;
+  margin: 0px 10px 0px 0px;
   position: relative;
   z-index: 50;
-  display: inline-block; }
-  @media (max-width: 740px) {
+  display: inline-block;
+  float: right;
+  padding: 30px 0px; }
+  @media (max-width: 860px) {
     #cpmenu {
-      display: none; } }
+      display: none;
+      float: none;
+      padding: 0px; } }
 
 #cptoggle div {
   width: 100%;
@@ -314,7 +322,7 @@ header {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   display: none; }
-  @media (max-width: 740px) {
+  @media (max-width: 860px) {
     #cptoggle div {
       display: block; } }
 

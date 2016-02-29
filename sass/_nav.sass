@@ -32,7 +32,7 @@ header
   ul.nav li
     display: inline-block
     padding: 0px 20px
-    @media (max-width: 740px)
+    @media (max-width: 860px)
       display: block
       margin: 0px
       padding: 0px
@@ -42,7 +42,7 @@ header
     text-decoration: none
     display: inline-block
     line-height: 58px
-    @media (max-width: 740px)
+    @media (max-width: 860px)
       height: 60px
       width: 100%
       text-align: center
@@ -74,8 +74,12 @@ header
   display: inline-block
   background: transparent
   float: right
+  display: none
   &:hover
     cursor: pointer
+
+  @media (max-width: 860px)
+    display: inline
 
 // Margin Top to center the logo in header, adjust for all media querys
 
@@ -83,12 +87,16 @@ header
   background: yellow
   padding: 0px
   display: block
-  margin: 0px
+  margin: 0px 10px 0px 0px
   position: relative
   z-index: 50
   display: inline-block
-  @media (max-width: 740px)
+  float: right
+  padding: 30px 0px
+  @media (max-width: 860px)
     display: none
+    float: none
+    padding: 0px
 
 
 // Hamburger Menu Styling
@@ -100,7 +108,7 @@ header
   transition: all ease-in-out 0.3s
   backface-visibility: hidden
   display: none
-  @media (max-width: 740px)
+  @media (max-width: 860px)
     display: block
 
 
