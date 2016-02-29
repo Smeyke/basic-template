@@ -1,7 +1,7 @@
 //  alert('Hello, World!')
 
 window.onscroll = function() {
-  var el = document.getElementsById('header-wrapper')[0];
+  var el = document.getElementById('header-wrapper');
   var className = 'small';
   if (el.classList) {
     if (window.scrollY > 10)
