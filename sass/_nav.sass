@@ -10,6 +10,7 @@ header
   background: yellow
   margin: 0 auto
   height: 120px
+  border-bottom: solid 1px gray
 
 .small
   height: 40px
@@ -30,15 +31,26 @@ header
 
   ul.nav li
     display: inline-block
-    padding: 10px 20px
+    padding: 0px 20px
     @media (max-width: 740px)
       display: block
-      padding: 10px 0px
-      margin: 0 10px
+      margin: 0px
+      padding: 0px
 
   ul li a
     color: black
     text-decoration: none
+    display: inline-block
+    line-height: 58px
+    @media (max-width: 740px)
+      height: 60px
+      width: 100%
+      text-align: center
+      background: white
+      border-bottom: solid 1px gray
+      &:hover
+        color: white
+        background: black
 
 #logo
   background:
@@ -50,7 +62,7 @@ header
   height: 80px
   width: 250px
   display: inline-block
-  margin: 20px 10px 0px
+  margin: 20px 10px
 // Margin Top to center the logo in header, adjust for all media querys
 
 
@@ -71,7 +83,7 @@ header
   background: yellow
   padding: 0px
   display: block
-  margin: 20px 0px 0px
+  margin: 0px
   position: relative
   z-index: 50
   display: inline-block
