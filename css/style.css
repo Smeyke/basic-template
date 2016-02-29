@@ -232,13 +232,16 @@ header {
   width: 100%;
   z-index: 115;
   background: violet;
-  height: 120px;
+  -webkit-transition: all 0.2s linear, box-shadow 0.2s linear;
+          transition: all 0.2s linear, box-shadow 0.2s linear;
   border-bottom: solid 1px gray; }
 
 #header-wrapper {
   max-width: 1200px;
   background: transparent;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  height: 120px; }
 
 .small {
   height: 50px;
@@ -271,11 +274,13 @@ header {
     text-decoration: none;
     margin: 0px;
     display: inline-block;
-    line-height: 35px;
+    line-height: 60px;
     padding: 0px 3px;
     margin: 0px 15px;
     font-weight: 300;
-    font-size: 18pt; }
+    font-size: 18pt;
+    margin-top: 4px;
+    border-bottom: solid 4px transparent; }
     .s-header ul li a:hover {
       border-bottom: solid 4px black; }
     @media (max-width: 860px) {
@@ -294,6 +299,24 @@ header {
           color: white;
           background: black; } }
 
+#logo-box {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  margin: 0; }
+  @media (max-width: 860px) {
+    #logo-box {
+      position: static;
+      top: auto;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      left: auto;
+      margin-left: 10px; } }
+
 #logo {
   background-color: transparent;
   background-image: url("../img/logo.svg");
@@ -301,14 +324,14 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   height: 80px;
-  width: 250px;
+  width: 200px;
   display: inline-block;
-  margin: 20px 10px; }
+  margin: 8px 0px 0px 0px; }
 
 #cptoggle {
   width: 28px;
   height: 30px;
-  margin: 45px 10px 0px;
+  margin: 50px 10px 0px;
   z-index: 101;
   display: inline-block;
   background: transparent;
@@ -325,17 +348,27 @@ header {
   padding: 0px;
   display: block;
   margin: 0px;
-  position: relative;
   z-index: 50;
   display: inline-block;
-  float: right;
-  margin: 45px 0px 0px; }
+  margin: 0px 0px 0px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px; }
   @media (max-width: 860px) {
     #cpmenu {
       display: none;
+      position: relative;
       float: none;
       padding: 0px;
-      margin: 0px; } }
+      margin: 0px;
+      top: auto;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      right: auto; } }
 
 #cptoggle div {
   width: 100%;
