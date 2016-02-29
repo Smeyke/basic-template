@@ -139,7 +139,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   padding: 0; }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -149,7 +150,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -212,12 +212,12 @@ section p {
   max-width: 500px;
   margin: 100px auto 50px;
   padding: 30px 20px;
-  background-color: #7FDBFF;
+  background-color: #ddd;
   border-radius: 10px;
   box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.8); }
   @media (max-width: 740px) {
     section p {
-      background-color: #0074D9; } }
+      background-color: #aaa; } }
 
 header {
   background-color: #7FDBFF;
@@ -226,21 +226,29 @@ header {
 
 #header-wrapper {
   max-width: 840px;
-  background: transparent;
+  background: yellow;
   margin: 0 auto;
-  border: solid 1px black; }
+  border: solid 1px black;
+  height: 120px; }
+
+.small {
+  height: 40px;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8); }
+
+.header-fix {
+  -webkit-transform: translateY(0%) !important;
+      -ms-transform: translateY(0%) !important;
+          transform: translateY(0%) !important; }
 
 .s-header {
   line-height: 34px;
   width: auto;
   padding: 0 20px;
   background: transparent;
-  transition: line-height 0.15s linear, box-shadow 0.15s linear;
+  -webkit-transition: line-height 0.15s linear, box-shadow 0.15s linear;
+          transition: line-height 0.15s linear, box-shadow 0.15s linear;
   position: fixed;
   z-index: 100; }
-  .s-header.small {
-    line-height: 40px;
-    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8); }
   .s-header ul.nav {
     background: transparent; }
   .s-header ul.nav li {
@@ -248,7 +256,7 @@ header {
     padding: 10px 20px; }
 
 #logo {
-  background-color: red;
+  background-color: transparent;
   background-image: url("../img/logo.svg");
   background-position: center center;
   background-size: contain;
@@ -256,35 +264,53 @@ header {
   height: 80px;
   width: 250px;
   display: inline-block;
-  margin: 0px 10px 0px; }
+  margin: 0px 10px 0px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 #cptoggle {
   width: 28px;
   height: 30px;
-  margin: 10px 0px 0px;
+  margin: 0px 10px 0px;
   z-index: 101;
   display: inline-block;
-  background: yellow; }
+  background: transparent;
+  float: right;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
   #cptoggle:hover {
     cursor: pointer; }
 
 #cpmenu {
-  background: transparent;
-  padding: 50px 10px; }
+  background: #01FF70;
+  padding: 50px 10px;
+  display: none; }
 
 #cptoggle div {
   width: 100%;
   height: 5px;
   background: black;
   margin: 4px auto;
-  transition: all 0.3s;
-  backface-visibility: hidden; }
+  -webkit-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 #cptoggle.on .one {
-  transform: rotate(45deg) translate(5px, 5px); }
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+      -ms-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px); }
 
 #cptoggle.on .two {
   opacity: 0; }
 
 #cptoggle.on .three {
-  transform: rotate(-45deg) translate(7px, -8px); }
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+      -ms-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px); }

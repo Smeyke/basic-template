@@ -7,11 +7,17 @@ header
 
 #header-wrapper
   max-width: 840px
-  background: transparent
+  background: yellow
   margin: 0 auto
   border: solid 1px black
+  height: 120px
 
+.small
+  height: 40px
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8)
 
+.header-fix
+  transform: translateY(0%) !important
 
 .s-header
   line-height: 34px
@@ -22,9 +28,7 @@ header
   transition: line-height 0.15s linear, box-shadow 0.15s linear
   position: fixed
   z-index: 100
-  &.small
-    line-height: 40px
-    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8)
+
 
   ul.nav
     background: transparent
@@ -34,7 +38,7 @@ header
 
 #logo
   background:
-    color: red
+    color: transparent
     image: url("../img/logo.svg")
     position: center center
     size: contain
@@ -43,22 +47,31 @@ header
   width: 250px
   display: inline-block
   margin: 0px 10px 0px
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
 
 // toggle test
 
 #cptoggle
   width: 28px
   height: 30px
-  margin: 10px 0px 0px
+  margin: 0px 10px 0px
   z-index: 101
   display: inline-block
-  background: yellow
+  background: transparent
+  float: right
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
   &:hover
     cursor: pointer
 
+
 #cpmenu
-  background: transparent
+  background: $lime
   padding: 50px 10px
+  display: none
 
 
 // Hamburger Menu Styling
@@ -67,7 +80,7 @@ header
   height: 5px
   background: black
   margin: 4px auto
-  transition: all 0.3s
+  transition: all ease-in-out 0.3s
   backface-visibility: hidden
 
 #cptoggle.on .one
