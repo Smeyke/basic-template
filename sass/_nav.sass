@@ -9,32 +9,31 @@ header
   max-width: 840px
   background: yellow
   margin: 0 auto
-  border: solid 1px black
   height: 120px
 
 .small
   height: 40px
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8)
 
-.header-fix
-  transform: translateY(0%) !important
 
 .s-header
   line-height: 34px
-  width: auto
-  padding: 0 20px
-  background: transparent
-
-  transition: line-height 0.15s linear, box-shadow 0.15s linear
-  position: fixed
+  width: 100%
+  padding: 0px
+  background: red
+  position: relative
   z-index: 100
 
 
   ul.nav
     background: transparent
+
   ul.nav li
     display: inline-block
     padding: 10px 20px
+    @media (max-width: 740px)
+      display: block
+      padding: 10px 0px
 
 #logo
   background:
@@ -46,32 +45,33 @@ header
   height: 80px
   width: 250px
   display: inline-block
-  margin: 0px 10px 0px
-  position: relative
-  top: 50%
-  transform: translateY(-50%)
+  margin: 20px 10px 0px
+// Margin Top to center the logo in header, adjust for all media querys
 
-// toggle test
 
 #cptoggle
   width: 28px
   height: 30px
-  margin: 0px 10px 0px
+  margin: 45px 10px 0px
   z-index: 101
   display: inline-block
   background: transparent
   float: right
-  position: relative
-  top: 50%
-  transform: translateY(-50%)
   &:hover
     cursor: pointer
 
+// Margin Top to center the logo in header, adjust for all media querys
 
 #cpmenu
-  background: $lime
-  padding: 50px 10px
-  display: none
+  background: yellow
+  padding: 0px
+  display: block
+  margin: 20px 0px 0px
+  position: relative
+  z-index: 50
+  display: inline-block
+  @media (max-width: 740px)
+    display: none
 
 
 // Hamburger Menu Styling
@@ -82,6 +82,10 @@ header
   margin: 4px auto
   transition: all ease-in-out 0.3s
   backface-visibility: hidden
+  display: none
+  @media (max-width: 740px)
+    display: block
+
 
 #cptoggle.on .one
   transform: rotate(45deg) translate(5px, 5px)

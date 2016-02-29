@@ -16,9 +16,3 @@ $("#cptoggle").click(function() {
   $(this).toggleClass("on");
   $("#cpmenu").slideToggle();
 });
-
-
-$("#cptoggle").click(function() {
-  $(this).toggleClass("header-fix");
-  $("#header #cpmenu").slideToggle();
-});
