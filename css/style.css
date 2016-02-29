@@ -223,14 +223,31 @@ section p {
 header {
   background-color: #ddd;
   margin: 0px;
-  padding: 0px;
-  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8); }
+  padding: 0px; }
 
 #header-wrapper {
   max-width: 1200px;
   background: transparent;
   margin: 0 auto;
   height: 50px; }
+
+.fluid-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 150;
+  background: #ddd;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8); }
+
+.small {
+  height: 100px !important; }
+
+#header-wrapper.small #logo-box #logo {
+  height: 80px; }
+
+#header-wrapper.small #cpmenu .s-header {
+  margin-top: 25px; }
 
 .s-header {
   line-height: 34px;
