@@ -1,1 +1,1 @@
-$("#cptoggle").click(function(){$(this).toggleClass("on"),$("#cpmenu").slideToggle()});
+$(window).scroll(function(){var l=$(window).scrollTop();l>=10?$("#header-wrapper").addClass("small"):$("#header-wrapper").removeClass("small")}),$("#cptoggle").click(function(){$(this).toggleClass("on"),$("#cpmenu").slideToggle()});
