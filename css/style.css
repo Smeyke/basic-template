@@ -216,10 +216,10 @@ section p {
   box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.8); }
   @media (max-width: 740px) {
     section p {
-      background-color: #f7f7f7; } }
+      background-color: #e6e6e6; } }
 
 header {
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin: 0px;
   padding: 0px; }
 
@@ -235,26 +235,26 @@ header {
   left: 0;
   width: 100%;
   z-index: 150;
-  background: #fff;
+  background: #FFFFFF;
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
   height: 100px;
-  -webkit-transition: all ease-in-out 250ms;
-          transition: all ease-in-out 250ms; }
+  -webkit-transition: all ease-in-out 350ms;
+          transition: all ease-in-out 350ms; }
 
 .small {
   height: 50px !important;
-  -webkit-transition: all ease-in-out 300ms;
-          transition: all ease-in-out 300ms; }
+  -webkit-transition: all ease-in-out 350ms;
+          transition: all ease-in-out 350ms; }
 
 #header-wrapper.small #logo-box #logo {
   margin-top: 5px;
-  -webkit-transition: all ease-in-out 250ms;
-          transition: all ease-in-out 250ms; }
+  -webkit-transition: all ease-in-out 350ms;
+          transition: all ease-in-out 350ms; }
 
 #header-wrapper.small #cpmenu .s-header {
   margin-top: 0px;
-  -webkit-transition: all ease-in-out 250ms;
-          transition: all ease-in-out 250ms; }
+  -webkit-transition: all ease-in-out 350ms;
+          transition: all ease-in-out 350ms; }
 
 .s-header {
   line-height: 34px;
@@ -265,8 +265,8 @@ header {
   z-index: 100;
   margin-right: -10px;
   margin-top: 25px;
-  -webkit-transition: all ease-in-out 300ms;
-          transition: all ease-in-out 300ms; }
+  -webkit-transition: all ease-in-out 350ms;
+          transition: all ease-in-out 350ms; }
   .s-header ul.nav {
     background: transparent;
     margin: 0px 10px 0px 0px;
@@ -288,13 +288,15 @@ header {
     text-decoration: none;
     margin: 0px;
     display: inline-block;
+    font-family: "Roboto";
+    font-weight: 400 !important;
     line-height: 35px;
     padding: 0px 3px;
     margin: 0px 15px;
     font-weight: 300;
     font-size: 18pt; }
     .s-header ul li a:hover {
-      border-bottom: solid 4px black; }
+      border-bottom: solid 3px black; }
     @media (max-width: 860px) {
       .s-header ul li a {
         height: 60px;
@@ -321,8 +323,8 @@ header {
   width: 200px;
   display: inline-block;
   margin: 34px 10px 5px 10px;
-  -webkit-transition: all ease-in-out 250ms;
-          transition: all ease-in-out 250ms; }
+  -webkit-transition: all ease-in-out 350ms;
+          transition: all ease-in-out 350ms; }
 
 #cptoggle {
   width: 28px;
@@ -382,3 +384,7 @@ header {
   -webkit-transform: rotate(-45deg) translate(7px, -8px);
       -ms-transform: rotate(-45deg) translate(7px, -8px);
           transform: rotate(-45deg) translate(7px, -8px); }
+
+.contact-form {
+  width: 800px;
+  background-color: red; }
