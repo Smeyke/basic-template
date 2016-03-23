@@ -208,20 +208,18 @@ body {
   font-family: "Roboto", "Lato", "Open Sans", sans-serif; }
 
 section p {
-  max-width: 500px;
-  margin: 50px auto 50px;
+  max-width: 860px;
+  margin: 125px auto 50px;
   padding: 30px 20px;
   position: relative;
-  z-index: 10;
-  background-color: #ddd;
-  border-radius: 10px;
+  background-color: white;
   box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.8); }
   @media (max-width: 740px) {
     section p {
-      background-color: #aaa; } }
+      background-color: #f7f7f7; } }
 
 header {
-  background-color: #ddd;
+  background-color: #fff;
   margin: 0px;
   padding: 0px; }
 
@@ -237,9 +235,11 @@ header {
   left: 0;
   width: 100%;
   z-index: 150;
-  background: #ddd;
+  background: #fff;
   box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
-  height: 100px; }
+  height: 100px;
+  -webkit-transition: all ease-in-out 250ms;
+          transition: all ease-in-out 250ms; }
 
 .small {
   height: 50px !important;
@@ -248,13 +248,13 @@ header {
 
 #header-wrapper.small #logo-box #logo {
   margin-top: 5px;
-  -webkit-transition: all ease-in-out 300ms;
-          transition: all ease-in-out 300ms; }
+  -webkit-transition: all ease-in-out 250ms;
+          transition: all ease-in-out 250ms; }
 
 #header-wrapper.small #cpmenu .s-header {
   margin-top: 0px;
-  -webkit-transition: all ease-in-out 300ms;
-          transition: all ease-in-out 300ms; }
+  -webkit-transition: all ease-in-out 250ms;
+          transition: all ease-in-out 250ms; }
 
 .s-header {
   line-height: 34px;
@@ -317,10 +317,12 @@ header {
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 40px;
+  height: 38px;
   width: 200px;
   display: inline-block;
-  margin: 30px 10px 5px 10px; }
+  margin: 34px 10px 5px 10px;
+  -webkit-transition: all ease-in-out 250ms;
+          transition: all ease-in-out 250ms; }
 
 #cptoggle {
   width: 28px;
