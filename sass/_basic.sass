@@ -20,15 +20,13 @@ body
 		family: "Roboto", "Lato", "Open Sans", sans-serif
 
 section p
-	max-width: 500px
-	margin: 50px auto 50px
+	max-width: 860px
+	margin: 125px auto 50px
 	padding: 30px 20px
 	position: relative
-	z-index: 10
-	background-color: $silver
-	border-radius: 10px
+	background-color: lighten($silver, 20%)
 	box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.8)
 
 	// Devices smaller than 740px
 	@media (max-width: 740px)
-		background-color: $gray
+		background-color: lighten($silver, 10%)
