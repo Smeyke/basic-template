@@ -24,6 +24,7 @@ header
   height: 100px
   transition: all ease-in-out 350ms
 
+
 .small
   height: 50px !important
   transition: all ease-in-out 350ms
@@ -36,6 +37,7 @@ header
   margin-top: 0px
   transition: all ease-in-out 350ms
 
+
 .s-header
   line-height: 34px
   width: auto
@@ -46,7 +48,6 @@ header
   margin-right: -10px
   margin-top: 25px
   transition: all ease-in-out 350ms
-
 
   //  ul nav font-size: 0 fixes space between inline-block elements
   ul.nav
@@ -71,16 +72,14 @@ header
     margin: 0px
     display: inline-block
     font:
-      family: "Roboto"
-      weight: 400 !important
-    line-height: 35px
-    padding: 0px 3px
-    margin: 0px 15px
-    font:
-      weight: 300
       size: 18pt
+      weight: 400
+    line-height: 35px
+    padding: 0px 2px
+    margin: 0px 16px
+
     &:hover
-      border-bottom: solid 3px black
+      border-bottom: solid 4px black
 
     @media screen and (max-width: $break-one)
       height: 60px
@@ -88,15 +87,15 @@ header
       line-height: 58px
       text-align: center
       margin: 0px 0px
-      background: white
+      background: $white
       padding: 0px
       font:
         size: 16pt
         weight: 400
       border-top: solid 1px gray
       &:hover
-        color: white
-        background: black
+        color: $white
+        background: $black
 
 #logo
   background:
@@ -120,6 +119,7 @@ header
   background: transparent
   float: right
   display: none
+
   &:hover
     cursor: pointer
 
@@ -146,7 +146,6 @@ header
 
 
 // HAMBURGER MENU STYLING
-
 #cptoggle div
   width: 100%
   height: 4px

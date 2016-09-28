@@ -16,18 +16,17 @@ file/
 
 └── sass/
     └── style.sass
-    └── _vars.sass
-    └── _normalize.scss
-    └── _skeleton-grid.sass
+    └──  _vars.sass
+    └──  _normalize.scss
+    └──  _skeleton-grid.sass
     │
-    └── _file_01.sass
-    └── _file_02.sass
-    └── _file_03.sass
+    └──  _file_01.sass
+    └──  _file_02.sass
+    └──  _file_03.sass
 
 ├── scripts/functions.js
 
 ├── img/logo.svg
-
 ```
 
 Feel free to do whatever you want with this small bag of code.
