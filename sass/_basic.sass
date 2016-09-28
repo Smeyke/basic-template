@@ -11,6 +11,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	font-size: 100%
 	font-family: inherit
 	vertical-align: baseline
+	box-sizing: border-box
 
 body
 	background: #f6f6f6
@@ -18,14 +19,14 @@ body
 		family: "Roboto", "Lato", "Open Sans", sans-serif
 
 section p
-	max-width: 860px
+	max-width: 960px
 	width: 100%
-	margin: 0px auto 50px
-	padding: 120px 20px 30px
+	margin: 0px auto 80px
+	padding: 120px 16px 40px
 	position: relative
 	background-color: lighten($silver, 20%)
 	box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.5)
 
-	// Devices smaller than 740px
-	@media (max-width: 740px)
-		background-color: lighten($silver, 10%)
+	// Devices smaller than 860px
+	@media screen and (max-width: $break-one)
+		padding: 70px 8px 40px
