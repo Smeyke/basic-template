@@ -4,9 +4,9 @@
 
 Hello there.
 
-This is my basic template to start projects.
+This is my basic template to start a simple webproject with HTML/CSS/JS.
 
-I work with sass and have my .sass files scructured like this:
+This repo works with Sass and is structured like this:
 
 ```
 file/
@@ -16,11 +16,17 @@ file/
 
 └── sass/
     └── style.sass
-    └── file_01.sass
-    └── file_02.sass
-    └── file_03.sass
+    └── _vars.sass
+    └── _normalize.scss
+    └── _skeleton-grid.sass
+    └── _file_01.sass
+    └── _file_02.sass
+    └── _file_03.sass
+
+├── scripts/functions.js
+
+├── img/logo.svg
 
 ```
 
-
-Have fun!
+Feel free to do whatever you want with this small bag of code.
